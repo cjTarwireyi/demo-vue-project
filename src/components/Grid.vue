@@ -45,16 +45,16 @@ export default {
             "title": "White Shirt",
             "size": "S",
             "price": "R100",
-            "stockQty": "5",
-            "imageUrl": "@/assets/red tea shirt.png"
+            "stockQty": "3",
+            "imageUrl": "white.jpg"
         },
          {
             "id":"456",
             "title": "Blue Shirt",
             "size": "M",
             "price": "R250",
-            "stockQty": "5",
-            "imageUrl": "@/assets/red tea shirt.png"            
+            "stockQty": "35",
+            "imageUrl": "blue.jpg"            
              
         },
         {
@@ -62,8 +62,8 @@ export default {
             "title": "Black Shirt",
             "size": "L",
             "price": "R300",
-            "stockQty": "5",
-            "imageUrl": "../assets/red.png"
+            "stockQty": "1",
+            "imageUrl": "black.jpg"
         }]
     }
 
