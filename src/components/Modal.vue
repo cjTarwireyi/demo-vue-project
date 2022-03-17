@@ -1,10 +1,14 @@
 <template>
     <div class="backdrop" @click.self="closeModal">
     <div class="modal">
-        <h1>{{selectedProduct.title}}</h1>
+        <h1>{{selectedProduct.title}}</h1><br>     
       
-       <img alt="Vue logo" :src="require('' +selectedProduct.imageUrl)">
-         <button @click="closeModal">close Modal</button>
+        <img :src="require('@/assets/' + selectedProduct.imageUrl)" width="100" height="100">  
+       
+            <p>Size: {{selectedProduct.size}}</p>
+            <p> Price: {{selectedProduct.price}}</p>
+            <p> Stock Quantity: {{selectedProduct.stockQty}}</p>
+        
     </div>
     </div>
     
@@ -12,11 +16,17 @@
 <script>
 export default{
     props:['selectedProduct'],
+ data(){
+    return {
+        imgUrl:"red.png"
+    }
+    },
     methods: {
         closeModal(){
             this.$emit('closeModal');
-        }
-    }
+        },
+    },
+
 
 }
 </script>
