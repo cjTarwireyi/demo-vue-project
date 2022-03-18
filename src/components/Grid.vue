@@ -8,7 +8,7 @@
         </tr>
           </thead>
         <tr v-for="product in products" :key="product.id"> 
-            <td>{{product.title}}</td> <td>{{product.size}}</td> <td>{{product.price}}</td> <td><button @click="viewProductDetails(product)">view details</button></td>
+            <td>{{product.title}}</td> <td>{{product.size}}</td> <td>{{product.price}}</td> <td><button class="btn btn-secondary" @click="viewProductDetails(product)">view details</button></td>
         </tr>
     </table>
    
