@@ -32,12 +32,17 @@ export default{
 </script>
 <style scoped>
 .modal{
+     z-index: 9998;    
+    background-color: rgba(0, 0, 0, 0.5);
+    display: table; 
+    transition: opacity 0.3s ease;
     width:400px;
     height: 400px;
     padding: 20px;
     margin: 100px auto;
     background: white;
     border-radius: 10px;
+    z-index: 1000;
 }
 .backdrop{
     top:0;
